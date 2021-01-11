@@ -15,15 +15,20 @@
         <TextBlock x:Name="tblkFirstNameName" HorizontalAlignment="Left" Margin="372,141,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkSurnameName" HorizontalAlignment="Left" Margin="372,174,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkBalanceName" HorizontalAlignment="Left" Margin="372,207,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tblkAccountTypeName" HorizontalAlignment="Left" Margin="372,263,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tblkFirst_Copy3" HorizontalAlignment="Left" Margin="372,296,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tblkFirst_Copy4" HorizontalAlignment="Left" Margin="372,329,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccountTypeName" HorizontalAlignment="Left" Margin="372,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Account Type"/>
+        <TextBlock x:Name="tblkBalance2Name" HorizontalAlignment="Left" Margin="372,296,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkInterestDateName" HorizontalAlignment="Left" Margin="372,329,0,0" TextWrapping="Wrap" Text="Interest Date" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkFirstName" HorizontalAlignment="Left" Margin="451,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkSurname" HorizontalAlignment="Left" Margin="451,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkBalance" HorizontalAlignment="Left" Margin="451,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tblkFirst_Copy" HorizontalAlignment="Left" Margin="451,263,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tblkFirst_Copy1" HorizontalAlignment="Left" Margin="451,296,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tblkFirst_Copy5" HorizontalAlignment="Left" Margin="451,329,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccountType" HorizontalAlignment="Left" Margin="451,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBalance2" HorizontalAlignment="Left" Margin="451,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkIntrerestDate" HorizontalAlignment="Left" Margin="451,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkTransactionAmount" HorizontalAlignment="Left" Margin="383,380,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxTransactionAmount" HorizontalAlignment="Left" Height="16" Margin="511,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.431,0.203"/>
+        <Button x:Name="btnDeposit" Content="Deposit" HorizontalAlignment="Left" Margin="684,98,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnWithdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="684,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnInterest" Content="Interest" HorizontalAlignment="Left" Margin="684,208,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
