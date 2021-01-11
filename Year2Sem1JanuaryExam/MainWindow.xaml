@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="514.667" Width="800">
     <Grid Height="483" VerticalAlignment="Top">
-        <CheckBox x:Name="chbxCurrentAccounts" Content="Current Accounts" HorizontalAlignment="Left" Margin="48,45,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="chbxSavingsAccounts" Content="Savings Accounts" HorizontalAlignment="Left" Margin="186,45,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chbxCurrentAccounts" Content="Current Accounts" HorizontalAlignment="Left" Margin="48,45,0,0" VerticalAlignment="Top" Click="chbxCurrentAccounts_Click"/>
+        <CheckBox x:Name="chbxSavingsAccounts" Content="Savings Accounts" HorizontalAlignment="Left" Margin="186,45,0,0" VerticalAlignment="Top" Click="chbxSavingsAccounts_Click"/>
         <TextBlock x:Name="tblkAccountList" HorizontalAlignment="Left" Margin="48,113,0,0" TextWrapping="Wrap" Text="Account List" VerticalAlignment="Top"/>
         <ListBox x:Name="lstbxAccounts" HorizontalAlignment="Left" Height="275" Margin="48,134,0,0" VerticalAlignment="Top" Width="250"/>
         <TextBlock x:Name="tblkAccountDetails" HorizontalAlignment="Left" Margin="372,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Accoun"/><Run Text="t "/><Run Text="Details"/></TextBlock>
