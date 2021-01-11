@@ -84,5 +84,27 @@ namespace Year2Sem1JanuaryExam
                 lstbxAccounts.ItemsSource = accounts;
             }
         }
+
+        private void lstbxAccounts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Account account = lstbxAccounts.SelectedItem as Account;
+
+            if (account != null)
+            {
+                tblkFirstName.Text = account.FirstName;
+                tblkSurname.Text = account.LastName;
+                tblkBalance.Text = account.Balance.ToString();
+                tblkAccountType.Text = account.AccountType;
+                tblkIntrerestDate.Text = account.InterestDate.ToString("d");
+            }
+        }
+
+        private void btnDeposit_Click(object sender, RoutedEventArgs e)
+        {
+            if (tbxTransactionAmount.Text != null)
+            {
+
+            }
+        }
     }
 }

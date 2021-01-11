@@ -18,6 +18,7 @@ namespace Year2Sem1JanuaryExam
         public int AccountNumber { get; set; }
         //Account holders interest date
         public DateTime InterestDate { get; set; }
+        public string AccountType { get; set; }
 
         public Account(string firstName, string lastName, decimal balance, int accountNumber)
         {

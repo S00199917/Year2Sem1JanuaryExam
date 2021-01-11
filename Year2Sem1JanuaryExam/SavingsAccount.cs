@@ -25,7 +25,7 @@ namespace Year2Sem1JanuaryExam
 
         public SavingsAccount(string firstName, string lastName, decimal balance, int accountNumber) : base(firstName, lastName, balance, accountNumber)
         {
-
+            AccountType = "Savings";
         }
 
         public override decimal CalculateInterest()
