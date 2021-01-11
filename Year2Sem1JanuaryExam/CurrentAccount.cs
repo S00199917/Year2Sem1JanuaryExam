@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Year2Sem1JanuaryExam
 {
@@ -22,9 +23,20 @@ namespace Year2Sem1JanuaryExam
             }
         }
 
-        public override void CalculateInterest()
+        public CurrentAccount(string firstName, string lastName, decimal balance, int accountNumber) : base(firstName, lastName, balance, accountNumber)
         {
-            
+
+        }
+
+        public override decimal CalculateInterest()
+        {
+            if (InterestDate.ToString("yyyy") != DateTime.Now.ToString("yyyy"))
+            {
+                InterestDate = DateTime.Now;
+                MessageBox.Show("Interest has already been applied this year");
+            }
+
+            return Balance * InterestRate;
         }
     }
 }

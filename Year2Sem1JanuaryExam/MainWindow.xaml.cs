@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,17 @@ namespace Year2Sem1JanuaryExam
     /// </summary>
     public partial class MainWindow : Window
     {
+        static ObservableCollection<Account> accounts = new ObservableCollection<Account>();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            SavingsAccount savings = new SavingsAccount("BruceBat", "WayneCave", 15000m, 22);
+
+            accounts.Add(savings);
+
+            lstbxAccounts.ItemsSource = accounts;
         }
     }
 }
