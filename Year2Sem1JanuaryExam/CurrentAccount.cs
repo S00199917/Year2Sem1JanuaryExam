@@ -9,8 +9,10 @@ namespace Year2Sem1JanuaryExam
 {
     class CurrentAccount : Account
     {
+        //creates a private variable with a value of 0.03;
         private decimal _interestRate = 0.03m;
 
+        //Creates a property with the value of _interestRate
         public decimal InterestRate
         {
             get
@@ -23,19 +25,15 @@ namespace Year2Sem1JanuaryExam
             }
         }
 
+        //Assings the account type as well as the other properties
         public CurrentAccount(string firstName, string lastName, decimal balance, int accountNumber) : base(firstName, lastName, balance, accountNumber)
         {
             AccountType = "Current";
         }
 
+        //Calculates the itnerest
         public override decimal CalculateInterest()
         {
-            if (InterestDate.ToString("yyyy") != DateTime.Now.ToString("yyyy"))
-            {
-                InterestDate = DateTime.Now;
-                MessageBox.Show("Interest has already been applied this year");
-            }
-
             return Balance * InterestRate;
         }
     }

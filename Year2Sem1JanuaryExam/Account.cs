@@ -18,8 +18,10 @@ namespace Year2Sem1JanuaryExam
         public int AccountNumber { get; set; }
         //Account holders interest date
         public DateTime InterestDate { get; set; }
+        //Account holders account type
         public string AccountType { get; set; }
 
+        //Assings each of the properties their corrosponding input from the main .cs page
         public Account(string firstName, string lastName, decimal balance, int accountNumber)
         {
             FirstName = firstName;
@@ -28,8 +30,10 @@ namespace Year2Sem1JanuaryExam
             AccountNumber = accountNumber;
         }
 
+        //creates an abstract method
         public abstract decimal CalculateInterest();
 
+        //overrides the ToString() method, used for the list box
         public override string ToString()
         {
             return string.Format($"{AccountNumber} - {LastName}, {FirstName}");

@@ -25,8 +25,8 @@
         <TextBlock x:Name="tblkTransactionAmount" HorizontalAlignment="Left" Margin="383,380,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top"/>
         <TextBox x:Name="tbxTransactionAmount" HorizontalAlignment="Left" Height="16" Margin="511,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.431,0.203"/>
         <Button x:Name="btnDeposit" Content="Deposit" HorizontalAlignment="Left" Margin="686,174,0,0" VerticalAlignment="Top" Width="75" Click="btnDeposit_Click"/>
-        <Button x:Name="btnWithdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="686,226,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnInterest" Content="Interest" HorizontalAlignment="Left" Margin="686,284,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnWithdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="686,226,0,0" VerticalAlignment="Top" Width="75" Click="btnWithdraw_Click"/>
+        <Button x:Name="btnInterest" Content="Interest" HorizontalAlignment="Left" Margin="686,284,0,0" VerticalAlignment="Top" Width="75" Click="btnInterest_Click"/>
 
     </Grid>
 </Window>
